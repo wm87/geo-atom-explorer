@@ -36,13 +36,13 @@ Darstellung geowissenschaftlicher Daten der BGR.
 
 Visualisierung der Bodenrichtwerte in Thüringen.
 
-## 3️⃣ DOP 20 – Main Viewport (MVP)
+## 3️⃣ DOP20 – Mecklenburg-Vorpommern
 
 ![DOP20 MVP](assets/DOP20_MVP.png)
 
 Hochauflösende Orthofotos des Hauptbereichs.
 
-## 4️⃣ DOP 20 Rheinland-Pfalz
+## 4️⃣ DOP20 Rheinland-Pfalz
 
 ![DOP20 RLP](assets/DOP20_RLP.png)
 
