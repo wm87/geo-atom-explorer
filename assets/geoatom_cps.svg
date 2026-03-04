@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="glow-y">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-c">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05070F"/>
+      <stop offset="100%" stop-color="#080B17"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background with clipped corners -->
+  <polygon points="12,0 108,0 120,12 120,108 108,120 12,120 0,108 0,12"
+           fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#00F5FF" stroke-width="0.4" opacity="0.12">
+    <line x1="0" y1="30" x2="120" y2="30"/>
+    <line x1="0" y1="60" x2="120" y2="60"/>
+    <line x1="0" y1="90" x2="120" y2="90"/>
+    <line x1="30" y1="0" x2="30" y2="120"/>
+    <line x1="60" y1="0" x2="60" y2="120"/>
+    <line x1="90" y1="0" x2="90" y2="120"/>
+  </g>
+
+  <!-- Outer border -->
+  <polygon points="12,0 108,0 120,12 120,108 108,120 12,120 0,108 0,12"
+           fill="none" stroke="#00F5FF" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Corner accents – yellow top-left -->
+  <polyline points="0,20 0,0 20,0" fill="none" stroke="#FFE600" stroke-width="2.5" filter="url(#glow-y)"/>
+  <!-- cyan bottom-right -->
+  <polyline points="120,100 120,120 100,120" fill="none" stroke="#00F5FF" stroke-width="2.5" filter="url(#glow-c)"/>
+  <!-- yellow bottom-left -->
+  <polyline points="0,100 0,120 20,120" fill="none" stroke="#FFE600" stroke-width="1.5" opacity="0.6"/>
+  <!-- cyan top-right -->
+  <polyline points="120,20 120,0 100,0" fill="none" stroke="#00F5FF" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Globe/Geo circle -->
+  <circle cx="60" cy="58" r="26" fill="none" stroke="#00F5FF" stroke-width="1.4" filter="url(#glow-c)" opacity="0.9"/>
+
+  <!-- Latitude lines -->
+  <ellipse cx="60" cy="58" rx="26" ry="10" fill="none" stroke="#00F5FF" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="60" cy="48" rx="20" ry="7" fill="none" stroke="#00F5FF" stroke-width="0.6" opacity="0.25"/>
+  <ellipse cx="60" cy="68" rx="20" ry="7" fill="none" stroke="#00F5FF" stroke-width="0.6" opacity="0.25"/>
+
+  <!-- Vertical meridian -->
+  <ellipse cx="60" cy="58" rx="10" ry="26" fill="none" stroke="#00F5FF" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Cross-hair ring -->
+  <circle cx="60" cy="58" r="32" fill="none" stroke="#FFE600" stroke-width="0.8" stroke-dasharray="4 6" opacity="0.5" filter="url(#glow-y)"/>
+
+  <!-- Cross-hair lines -->
+  <line x1="60" y1="20" x2="60" y2="30" stroke="#FFE600" stroke-width="1.5" filter="url(#glow-y)"/>
+  <line x1="60" y1="86" x2="60" y2="96" stroke="#FFE600" stroke-width="1.5" filter="url(#glow-y)"/>
+  <line x1="22" y1="58" x2="32" y2="58" stroke="#FFE600" stroke-width="1.5" filter="url(#glow-y)"/>
+  <line x1="88" y1="58" x2="98" y2="58" stroke="#FFE600" stroke-width="1.5" filter="url(#glow-y)"/>
+
+  <!-- Center dot -->
+  <circle cx="60" cy="58" r="3.5" fill="#FFE600" filter="url(#glow-y)"/>
+  <circle cx="60" cy="58" r="1.5" fill="#fff"/>
+
+  <!-- Atom feed RSS-style arcs (bottom-right of globe) -->
+  <g transform="translate(72,68)" fill="none" stroke="#FF00A0" stroke-width="1.4" filter="url(#glow-c)">
+    <circle cx="0" cy="8" r="2" fill="#FF00A0"/>
+    <path d="M3,5 A6,6 0 0,1 9,11" stroke-linecap="round"/>
+    <path d="M6,2 A11,11 0 0,1 16,13" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Label: GEO -->
+  <text x="60" y="103" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="7.5" font-weight="bold"
+        fill="#FFE600" letter-spacing="4" filter="url(#glow-y)" opacity="0.9">GEO_ATOM</text>
+
+  <!-- Top label: EX -->
+  <text x="60" y="16" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="6.5" font-weight="bold"
+        fill="#00F5FF" letter-spacing="3" filter="url(#glow-c)" opacity="0.8">// EX //</text>
+
+  <!-- Scan line overlay -->
+  <rect x="0" y="0" width="120" height="120"
+        fill="url(#scan)" opacity="0.06"
+        clip-path="url(#clip-outer)"/>
+</svg>

@@ -7,11 +7,14 @@
 ![Node.js Proxy](https://img.shields.io/badge/Proxy-Node.js-1e6f85?style=for-the-badge)
 ![Abo Modell](https://img.shields.io/badge/Modell-Subscription-6a0dad?style=for-the-badge)
 
+![GeoAtom EX](assets/geoatom_cps.svg)
+
 ---
 
 ## Geodaten professionell entdecken, visualisieren und herunterladen
 
 **GeoAtom-Explorer** ist Ihre Enterprise-Lösung für die strukturierte Nutzung von INSPIRE‑ und ISO‑Atom-Feeds.
+
 Sie erhalten:
 
 * Sofort nutzbare Visualisierung von Geodaten auf einer interaktiven Karte
@@ -22,7 +25,10 @@ Ideal für Behörden, Planungsbüros, Ingenieurdienstleister oder Unternehmen �
 
 ---
 
-# 🖥️ Showcase – Praxisbeispiele
+# 🖥️ Showcase – Standard Template (Default)
+
+> Dieses Template ist die **Standard-Konfiguration** des GeoAtom-Explorer.
+> Es wird automatisch geladen, sofern kein alternatives Template aktiviert wird.
 
 ## 1️⃣ Bundesanstalt für Geowissenschaften und Rohstoffe (BGR)
 
@@ -53,6 +59,25 @@ Orthofotos für Rheinland-Pfalz.
 ![HU Bayern](assets/HU_BY.png)
 
 Darstellung der Hausumringe in Bayern.
+
+---
+
+# 🧩 Optionales Template – CPS
+
+> Das **CPS-Template** ist eine alternative Oberfläche.
+> Es wird **nicht standardmäßig geladen** und kann projektbezogen oder kundenspezifisch aktiviert werden.
+
+## CPS – Feed Übersicht
+
+![CPS Feeds](assets/cps_feeds.png)
+
+## CPS – Loading Screen
+
+![CPS Loading](assets/cps_loading.png)
+
+## CPS – Datenansicht
+
+![CPS Data](assets/cps_data.png)
 
 ---
 
@@ -142,6 +167,8 @@ Darstellung der Hausumringe in Bayern.
 * Integration zusätzlicher Datenquellen
 
 **Testzugang:** 14 Tage kostenfrei und unverbindlich.
+
+---
 
 # 📞 Kontakt
 
